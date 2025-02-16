@@ -1,0 +1,473 @@
+/* Home */
+
+
+body {
+    font-family: sans-serif;
+    background-image: url("../images/background.png");
+    background-position: center;
+    height: 100%;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #141414;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav-navigation {
+    display: flex;
+    gap: 2em;
+
+}
+
+.InfoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 5em;
+    color: white;
+
+}
+
+.ImageOfNathan img {
+    width: 700px;
+    height: 800px;
+    border-radius: 10%;
+    /* border: 2px solid white; */
+    float: right;
+}
+
+
+.main h1 {
+    font-size: 3em;
+    ;
+    line-height: 1.5em;
+    width: 20em;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.red-text {
+    color: #8B0000;
+}
+
+.InfoContainer div button {
+    padding: 1em;
+    background-color: #8B0000;
+    color: white;
+    border-radius: 5%;
+    font-family: sans-serif;
+    width: 25%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+
+footer {
+    background-color: #141414;
+    padding: 3em;
+}
+
+.Socials img {
+    height: 30px;
+    width: 30px;
+}
+
+.Socials img {
+    transition: filter 0.3s ease-in-out;
+}
+
+.Socials img:hover {
+    filter: grayscale(100%) brightness(2);
+}
+.Socials {
+    position: relative;
+    display: flex;
+    gap: 2em;
+    top: 10.5em;
+}
+
+.nav-navigation div {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-navigation div::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #8B0000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-navigation div:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Projects */
+
+.projects div img {
+    width: 300px;
+    height: 300px;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+.projects div {
+    background-color: #141414;
+    border: solid 2px white;
+    border-radius: 5%;
+}
+
+.projectsContainer h2 {
+    text-align: center;
+}
+
+.projectsContainer {
+    padding: 1em;
+}
+
+
+/* About */
+
+.AboutImage img {
+    width: 500px;
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 20%;
+    border: 2px solid white;
+}
+
+.AboutImage {
+    float: left;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+}
+
+.aboutInfo {
+    display: flex;
+    align-items: center;
+}
+
+.aboutInfo {
+    width: 50%;
+}
+
+.AboutMe p {
+    width: 50%;
+    line-height: 30px;
+}
+
+.AboutMe h2 {
+    color: #8B0000;
+}
+
+.interestsContainer div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+}
+
+.interests {
+    padding: 7em;
+}
+
+.interestsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.interestsContainer div {
+    width: 20%;
+    padding: 2em;
+    background-color: #8B0000;
+    border-radius: 10%;
+    border: solid 2px white;
+    text-align: center;
+}
+
+.interestsContainer div p {
+    background-color: white;
+    border-radius: 2%;
+    color: black;
+}
+
+/* Skills */
+
+.skills div h2{
+    text-align: center;
+    padding: 2em;
+}
+
+.skills{
+    padding: 5em;
+}
+
+.professionalSkills {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.professionalSkillsContainer{
+    padding: 5em;
+}
+
+.professionalSkills div {
+    background-color: #8B0000;
+    text-align: center;
+    border: 2px solid white;
+    width: 15%;
+    border-radius: 5%;
+}
+.professionalSkills div h2{
+    font-size: 15px;
+}
+
+.technicalSkills div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+.technicalSkills{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.technicalSkills div{
+    background-color: #141414;
+    padding: 1em;
+    border-radius: 20%;
+    border: 2px solid white;
+}
+
+.technicalSkillsContainer{
+    padding: 5em;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    /* Main page */
+    .name{
+        display: none;
+    }
+    .InfoContainer {
+        flex-direction: column;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ImageOfNathan img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .InfoContainer h1 {
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 10px;
+    }
+
+    .Socials div img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .Socials{
+        position: static;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    /* About Page */
+
+    .AboutImage img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .AboutImage {
+        float: none;
+        margin: 0 auto; 
+        clear: both; 
+    }
+
+    .aboutInfo {
+        display: block; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .professionalSkills{
+        width: 100%;
+    }
+
+    .AboutMe{
+        height: 10px;
+    }
+
+    .aboutContainer{
+        flex-direction: column;
+
+    }
+
+    .AboutMe p {
+        width: 100%;
+        line-height: 20px;
+    }
+
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interestsContainer {
+        flex-direction: column; 
+        align-items: center;
+        gap: 1em;    
+              
+    }
+
+    .interestsContainer div {
+        width: 200%;            
+        padding: 1em;  
+                 
+    }
+
+    .interestsContainer div img {
+        width: 80px;          
+        height: 80px;         
+    }
+
+    .interestsContainer div p{
+        font-size: 10px;
+    }
+
+    .professionalSkills div{
+
+        width: 50%;
+    }
+
+    /* Projects */
+
+    .projects{
+        flex-direction: column;
+        padding: 0.5em;
+        width: 100%;
+    }
+
+    .projects div img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .projects div iframe{
+        width: 100px;
+        height: 100px;
+    }
+
+    .projects div p{
+        font-size: 10px;
+    }
+
+    .projectsContainer {
+        padding: 2em;
+    }
+
+    /* Skills */
+
+    
+    .professionalSkillsContainer{
+        padding: 1em;
+    }
+
+    .professionalSkillsContainer h2{
+        padding: 1px;
+    }
+
+
+    .professionalSkills div h2{
+        font-size: 8px;
+    }
+
+    .professionalSkills div{
+        width: 100%;
+    }
+
+    .technicalSkillsContainer{
+        padding: 1em;
+    }
+
+    .technicalSkills{
+        flex-wrap: wrap;
+
+    }
+
+    .technicalSkills div{
+        padding: 1px;
+    }
+
+    .technicalSkills div img{
+        width: 50px;
+        height: 50px;
+    }
+   
+}
