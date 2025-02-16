@@ -361,6 +361,7 @@ p {
 
     .AboutMe{
         height: 10px;
+       
     }
 
     .aboutContainer{
@@ -371,6 +372,7 @@ p {
     .AboutMe p {
         width: 100%;
         line-height: 20px;
+    
     }
 
 
@@ -382,6 +384,7 @@ p {
     .interestsContainer {
         flex-direction: column; 
         align-items: center;
+        margin-top: 2em;
         gap: 1em;    
               
     }
@@ -436,7 +439,7 @@ p {
 
     
     .professionalSkillsContainer{
-        padding: 1em;
+        padding: 4em;
     }
 
     .professionalSkillsContainer h2{
@@ -445,11 +448,12 @@ p {
 
 
     .professionalSkills div h2{
-        font-size: 8px;
+        font-size: 5px;
     }
 
     .professionalSkills div{
-        width: 100%;
+        flex: 1; /* Makes each div take up equal space */
+    min-width: 60px; /* Prevents them from getting too small */
     }
 
     .technicalSkillsContainer{
